@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name VR</title>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
+<body>
+<!-- environment -->
+<a-scene>
+    <!--Assets-->
+    <a-assets>
+        <img id="wall " scr="images/lavender.jpg" title="">
+    </a-assets>
+<a-entity environment="preset:forest; dressingAmount:500;"></a-entity>
+
+<!-- Mesuem start -->
+ <a-cylinder id="floor" position="0 0 0" radius="7.5" color="grey" height="0.1"></a-cylinder>
+<a-box id="wall1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" color="black"></a-box>
+<a-box id="wall2" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" color="black"></a-box>
+<a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="black"></a-box>
+<a-box id="wall4"position="-5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="black"></a-box>
+<!--roof-->
+<a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="black"></a-cylinder>
+<a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="black"></a-cylinder>
+<a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" color="black"></a-box>
+<a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" color="black"></a-box>
+
+<!-- ART -->
+<a-plane id="art1" src="#art1" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+
+
+
+ <img id="art1" src="images/lavender.jpg" title="Image by Hans from Pixabay "preload="auto">
+ <img id="art2" src="images/my_beach.png" title="Image by Pexels from Pixabay "preload="auto">
+
+
+
+
+
+
+
+</a-scene>
+</body>
+</html>
+
+
