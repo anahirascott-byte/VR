@@ -18,29 +18,31 @@
         <img id="wall " scr="images/lavender.jpg" title="">
          <img id="art1" src="images/lavender.jpg" title="Image by Hans from Pixabay "preload="auto">
  <img id="art2" src="images/my_beach.png" title="Image by Pexels from Pixabay "preload="auto">
+ <img id="art3" src="images/Ana-Sheep.png" title="Image by Pexels from Pixabay "preload="auto">
+ <img id="art4" src="images/whale.jpg" title="Image by Pexels from Pixabay "preload="auto">
     </a-assets>
-<a-entity environment="preset:forest; dressingAmount:500;"></a-entity>
+<a-entity environment="preset:moon; dressingAmount:500;"></a-entity>
 
 <!-- Mesuem start -->
- <a-cylinder id="floor" position="0 0 0" radius="7.5" color="grey" height="0.1"></a-cylinder>
+ <a-cylinder id="floor" position="0 0 0" radius="7.5" color="black" height="0.1"></a-cylinder>
 <a-box id="wall1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" color="black"></a-box>
 <a-box id="wall2" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" color="black"></a-box>
-<a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="black"></a-box>
-<a-box id="wall4"position="-5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="black"></a-box>
+<a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="grey"></a-box>
+<a-box id="wall4"position="-5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="grey"></a-box>
 <!--roof-->
-<a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="black"></a-cylinder>
-<a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="black"></a-cylinder>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="grey"></a-cylinder>
+<a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="grey"></a-cylinder>
 <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" color="black"></a-box>
 <a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" color="black"></a-box>
 
 <!-- ART -->
 <a-plane id="art1" src="#art1" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
-<a-plane id="art2" src="#art2" scale="2 2 0.05" rotation="0-90" position="4.918 1935 -1.096"></a-plane>
+<a-plane id="art2" src="#art2" scale="2 2 0.05" rotation="0 -90 0 " position="4.918 1.935 -1.096"></a-plane>
+<a-plane id="art3" src="#art3" scale="2 2 0.05" rotation="0 90 0 " position="-4.934 1.935 -1.096 "></a-plane>
+<a-plane id="art4" src="#art4" scale="2 2 0.05" rotation="0 180 0 " position="-0.342 1.935 4.741 "></a-plane>
 
-
-
-
-
+<!--3D object-->
+<a-obj-model id="3dModel1" src="images/tinker.obj" mtl="images/obj.mtl" position="0 0 0" rotation="-90 0 0" scale="0.05 0.05 0.05"></a-obj-model>
 
 
 
